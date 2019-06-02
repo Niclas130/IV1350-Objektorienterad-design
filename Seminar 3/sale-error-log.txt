@@ -1,0 +1,9 @@
+2019-jun-02 13:06:22, Exception was thrown: The item could not be added
+controller.AddItemOperationFailException: The item could not be added
+	at controller.Controller.addItem(Controller.java:59)
+	at view.View.addItemToView(View.java:51)
+	at startUp.Main.main(Main.java:26)
+Caused by: integration.DatabaseErrorException: An error occurred in the database
+	at integration.ItemRegistry.findItem(ItemRegistry.java:35)
+	at controller.Controller.addItem(Controller.java:53)
+	... 2 more
